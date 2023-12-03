@@ -1,19 +1,18 @@
 <?php
 
-echo "Hello Azure4!";
-$serverHost = "iot-health-app.database.windows.net";
-$user = "iot-health-app";
+echo "Hello Azure5!";
+$servername = "iot-health-app.database.windows.net";
+$username = "iot-health-app";
 $password = "fsktm123$";
 $databaseName = "iothealthapp-database";
 
 // Create connection
-$conn = mysqli_connect($serverHost, $user, $password);
+$conn = new mysqli($servername, $username, $password);
 
 // Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
-echo "Please";
 ?>
 
