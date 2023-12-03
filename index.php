@@ -6,11 +6,14 @@ $user = "iot-health-app";
 $password = "fsktm123$";
 $databaseName = "iothealthapp-database";
 
-$connectNow = new mysqli_connect($serverHost, $user, $password, $databaseName);
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
 
 // Check connection
-if ($connectNow->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-echo "Hello Azure2!";
+echo "Please";
+?>
+
