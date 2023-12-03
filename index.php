@@ -1,6 +1,6 @@
 <?php
 
-echo "Hello Azure1!";
+echo "Hello Azure3!";
 $serverHost = "iot-health-app.database.windows.net";
 $user = "iot-health-app";
 $password = "fsktm123$";
